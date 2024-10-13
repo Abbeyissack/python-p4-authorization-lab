@@ -88,6 +88,8 @@ class MemberOnlyIndex(Resource):
     
     def get(self):
         pass
+    # profile = Profile
+
 
 class MemberOnlyArticle(Resource):
     
@@ -106,3 +108,5 @@ api.add_resource(MemberOnlyArticle, '/members_only_articles/<int:id>', endpoint=
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
+
+    # kwargs
